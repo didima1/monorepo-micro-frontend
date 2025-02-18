@@ -1,0 +1,17 @@
+{
+  "name": "monorepo-micro-frontends",
+  "version": "1.0.0",
+  "scripts": {
+    "start:admin": "npm start --prefix ./services/admin",
+    "start:host": "npm start --prefix ./services/host",
+    "start:shop": "npm start --prefix ./services/shop",
+    "start:all": "concurrently \"npm start --prefix ./services/admin\" \"npm start --prefix ./services/host\" \"npm start --prefix ./services/shop\""
+  },
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
