@@ -80,19 +80,19 @@ To build specific services for production:
 #### Admin
 ``` bash
 cd services/admin
-npm run build
+npm run build:prod
 ```
 #### Host
 ``` bash
 cd services/host
-npm run build
+npm run build:prod 
 ```
 #### Shop
 ``` bash
 cd services/shop
-npm run build
+npm run build:prod
 ```
-Build outputs will be stored in their respective `dist/` directories inside each service.
+Build outputs will be stored in their respective `build/` directories inside each service.
 ## Configuration
 ### Webpack
 Each service is configured independently with Webpack. You can find their configurations in the following files:
